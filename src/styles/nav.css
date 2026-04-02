@@ -1,0 +1,327 @@
+/* ================= NAVBAR ================= */
+
+.navbar{
+ 
+  width:100%;
+  height:70px;
+  background:#001f47;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 clamp(16px,4vw,40px);
+  color:white;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+
+  overflow:visible; /* or hidden if needed */
+}
+
+/* LOGO */
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:#6ec6ff;
+  white-space:nowrap;
+}
+
+/* TOGGLE */
+
+#nav-toggle{
+  display:none;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+  user-select:none;
+}
+
+/* DESKTOP MENU */
+
+.nav-menu{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:22px;
+  padding:0;
+  margin:0;
+}
+
+.nav-links li a{
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  position:relative;
+  display:inline-block;
+}
+
+/* underline hover */
+
+.nav-links li a::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:2px;
+  background:#6ec6ff;
+  left:0;
+  bottom:-5px;
+  transition:width 0.3s ease;
+}
+
+.nav-links li a:hover::after{
+  width:100%;
+}
+
+/* AUTH BUTTONS */
+
+.nav-right{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.nav-btn{
+  padding:8px 16px;
+  border-radius:20px;
+  text-decoration:none;
+  color:white;
+  border:1px solid #6ec6ff;
+  font-weight:500;
+  transition:all 0.25s ease;
+}
+
+.nav-btn:hover{
+  background:#6ec6ff;
+  color:#000;
+}
+
+.signup{
+  background:#6ec6ff;
+  color:#000;
+}
+
+.signup:hover{
+  opacity:0.9;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:1000px){
+
+  .nav-menu{
+    gap:18px;
+  }
+
+  .nav-links{
+    gap:16px;
+  }
+
+  .nav-btn{
+    padding:6px 14px;
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:900px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-menu{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#021733;
+    flex-direction:column;
+    align-items:center;
+    padding:25px 0;
+    gap:25px;
+    animation:dropdown 0.25s ease;
+  }
+
+  .nav-menu.open{
+    display:flex;
+  }
+
+  .nav-links{
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+  }
+
+  .nav-right{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .nav-btn{
+    width:160px;
+    text-align:center;
+  }
+
+}
+
+/* dropdown animation */
+
+@keyframes dropdown{
+
+  from{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+/* ================= BODY OFFSET ================= */
+
+body{
+  padding-top:70px;
+}
+
+/* ================= PROFILE ================= */
+
+.profile-wrapper{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+
+/* ICON */
+
+.profile-icon{
+  font-size:26px;
+  color:white;
+  cursor:pointer;
+}
+
+.profile-icon img{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+/* DROPDOWN */
+
+.profile-dropdown{
+  position:absolute;
+  right:0;
+  top:100%;
+  margin-top:8px;
+
+  background:#012b62;
+  border-radius:10px;
+  padding:10px 0;
+  min-width:160px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+  display:none;
+  flex-direction:column;
+
+  opacity:0;
+  transform:translateY(-8px);
+  transition:all 0.2s ease;
+}
+
+/* SHOW DROPDOWN */
+
+.profile-wrapper:hover .profile-dropdown,
+.profile-dropdown:hover{
+  display:flex;
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* hover bridge */
+
+.profile-wrapper::after{
+  content:"";
+  position:absolute;
+  top:100%;
+  right:0;
+  width:100%;
+  height:12px;
+}
+
+/* dropdown items */
+
+.profile-dropdown a,
+.profile-dropdown button{
+  padding:10px 18px;
+  text-decoration:none;
+  color:white;
+  background:none;
+  border:none;
+  text-align:left;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover{
+  background:#6ec6ff;
+  color:#000;
+}
+
+/* PROFILE HEADER */
+
+.profile-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 18px;
+}
+
+.profile-header img{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.profile-header span{
+  font-weight:500;
+}
+
+/* ================= GLOBAL FIXES ================= */
+
+/* remove browser click outlines */
+
+a,
+button,
+label{
+  outline:none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* prevent click shifting */
+
+button{
+  border:none;
+  background:none;
+}
+
+button:active,
+a:active{
+  transform:none;
+}

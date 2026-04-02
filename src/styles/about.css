@@ -1,0 +1,166 @@
+/* ================= BASE ================= */
+
+body {
+  background: #020f25;
+  color: white;
+  padding-top: 70px;
+}
+
+/* ================= HERO ================= */
+
+.about-hero {
+  padding: 130px 20px 90px;
+  text-align: center;
+  background: radial-gradient(circle at center, #062349, #020f25);
+}
+
+.about-hero h1 {
+  font-size: 46px;
+  letter-spacing: 4px;
+  margin-bottom: 14px;
+}
+
+.about-hero p {
+  font-size: 15px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+/* ================= STORY ================= */
+
+.about-story {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.story-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.story-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.story-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
+/* ================= VALUES ================= */
+
+.about-values {
+  padding: 100px 20px;
+  background: #020b1a;
+  text-align: center;
+}
+
+.about-values h2 {
+  font-size: 34px;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.value-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(110,198,255,0.25);
+  border-radius: 22px;
+
+  width: 260px;
+  padding: 40px 25px;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.value-card i {
+  font-size: 30px;
+  color: #6ec6ff;
+  margin-bottom: 18px;
+}
+
+.value-card h3 {
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.value-card p {
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(110,198,255,0.25);
+}
+
+/* ================= VISION ================= */
+
+.about-vision {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.about-vision h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.about-vision p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #020b1a;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(110,198,255,0.15);
+}
+
+.footer p {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  opacity: 0.7;
+}
+
+.footer-credit {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.footer-credit:hover {
+  color: #6ec6ff;
+  opacity: 0.85;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .values-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+}

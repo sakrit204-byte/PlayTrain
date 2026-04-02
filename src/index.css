@@ -1,0 +1,73 @@
+/* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Root container */
+
+#root{
+  width:100%;
+}
+
+/* Body */
+
+body{
+  margin:0;
+  min-height:100vh;
+
+  overflow-x:hidden;
+}
+
+/* ===== GLOBAL SCROLLBAR ===== */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #021733;
+  border-radius: 10px;
+}
+
+/* thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #6ec6ff,
+    #3fa9ff
+  );
+
+  border-radius: 10px;
+
+  border: 2px solid #021733;
+
+  box-shadow:
+    0 0 8px rgba(110,198,255,0.8),
+    inset 0 0 6px rgba(255,255,255,0.2);
+
+  transition: all 0.3s ease;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #9edbff,
+    #6ec6ff
+  );
+
+  box-shadow:
+    0 0 14px rgba(110,198,255,1),
+    inset 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* corner */
+::-webkit-scrollbar-corner {
+  background: #021733;
+}

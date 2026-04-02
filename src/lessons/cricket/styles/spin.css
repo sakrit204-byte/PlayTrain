@@ -1,0 +1,59 @@
+/* SPIN DEMO */
+
+.spin-demo{
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+/* SPINNING BALL */
+
+.spin-ball{
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle at 30% 30%, #ff4d4d, #b30000);
+
+position:relative;
+
+animation:spinBall 2s linear infinite;
+
+box-shadow:0 0 20px rgba(255,0,0,0.6);
+
+}
+
+/* SEAM LINE */
+
+.spin-ball::after{
+
+content:"";
+
+position:absolute;
+
+width:4px;
+height:100%;
+
+background:white;
+
+left:50%;
+transform:translateX(-50%);
+
+}
+
+/* ROTATION */
+
+@keyframes spinBall{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}

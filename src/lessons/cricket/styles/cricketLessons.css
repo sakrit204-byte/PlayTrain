@@ -1,0 +1,584 @@
+/* PAGE */
+
+body{
+  margin:0;
+  background:#021733;
+  font-family:system-ui,sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  color:white;
+}
+
+
+/* ================= GROUND ================= */
+
+.ground{
+  position:relative;
+
+  width:520px;
+  height:520px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(circle at center,
+  #28c76f 0%,
+  #1ea657 55%,
+  #147a3f 100%);
+
+  box-shadow:
+  0 0 80px rgba(34,197,94,0.5),
+  inset 0 0 50px rgba(0,0,0,0.4);
+
+}
+
+
+/* ================= BOUNDARY ================= */
+
+.ground::before{
+  content:"";
+  position:absolute;
+  inset:12px;
+
+  border:3px solid rgba(255,255,255,0.35);
+  border-radius:50%;
+}
+
+
+/* ================= 30 YARD CIRCLE ================= */
+
+.inner-circle{
+  position:absolute;
+
+  width:280px;
+  height:280px;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%,-50%);
+
+  border:2px dashed rgba(255,255,255,0.45);
+  border-radius:50%;
+}
+
+
+/* ================= PITCH ================= */
+
+.pitch{
+  position:absolute;
+
+  width:40px;
+  height:160px;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%,-50%);
+
+  background:linear-gradient(#e6c384,#cda45e);
+
+  border-radius:6px;
+
+  box-shadow:
+  inset 0 0 8px rgba(0,0,0,0.4),
+  0 0 10px rgba(0,0,0,0.3);
+}
+
+
+/* ================= FIELDERS ================= */
+
+.position{
+  position:absolute;
+
+  width:14px;
+  height:14px;
+
+  border-radius:50%;
+
+  background:#38bdf8;
+
+  box-shadow:0 0 12px rgba(56,189,248,0.9);
+
+  cursor:pointer;
+
+  transition:0.25s;
+}
+
+.position:hover{
+  transform:scale(1.8);
+  box-shadow:0 0 25px rgba(56,189,248,1);
+}
+
+
+/* ================= TOOLTIP ================= */
+
+.position::after{
+  content:attr(data-name);
+
+  position:absolute;
+  bottom:24px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  background:#020617;
+  padding:4px 8px;
+
+  font-size:12px;
+  border-radius:6px;
+
+  white-space:nowrap;
+
+  opacity:0;
+  transition:0.2s;
+}
+
+.position:hover::after{
+  opacity:1;
+}
+
+
+/* ================= FIELD POSITIONS ================= */
+/* positions based on pitch center */
+
+.slip{
+  top:210px;
+  left:300px;
+}
+
+.gully{
+  top:190px;
+  left:330px;
+}
+
+.point{
+  top:240px;
+  left:410px;
+}
+
+.cover{
+  top:310px;
+  left:380px;
+}
+
+.mid-off{
+  top:350px;
+  left:270px;
+}
+
+.mid-on{
+  top:350px;
+  left:220px;
+}
+
+.square-leg{
+  top:300px;
+  left:120px;
+}
+
+.fine-leg{
+  top:230px;
+  left:90px;
+}
+
+.third-man{
+  top:150px;
+  left:150px;
+}
+
+.long-off{
+  top:440px;
+  left:320px;
+}
+
+.long-on{
+  top:440px;
+  left:200px;
+}
+
+
+/* ================= POPUP ================= */
+
+.popup{
+  position:fixed;
+  inset:0;
+
+  background:rgba(2,6,23,0.85);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup-content{
+  background:#020617;
+
+  width:420px;
+  padding:22px;
+
+  border-radius:16px;
+
+  box-shadow:
+  0 0 30px rgba(56,189,248,0.4);
+}
+
+
+
+/* ================= module 2 ================= */
+
+
+
+
+/* PAGE */
+
+.lesson-page{
+  max-width:1000px;
+  margin:auto;
+  padding:40px;
+  color:#e6f2ff;
+}
+
+/* HERO */
+
+.lesson-hero{
+  margin-bottom:50px;
+}
+
+.lesson-hero h1{
+  font-size:40px;
+  color:#6ec6ff;
+  margin-bottom:10px;
+}
+
+.lesson-hero p{
+  font-size:16px;
+  line-height:1.7;
+  opacity:0.9;
+}
+
+
+/* SECTIONS */
+
+.lesson-section{
+  margin-bottom:60px;
+}
+
+.lesson-section h2{
+  color:#6ec6ff;
+  margin-bottom:14px;
+  font-size:26px;
+}
+
+
+/* INFO GRID */
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.info-card{
+  background:#0b2d52;
+  padding:18px;
+  border-radius:14px;
+  transition:0.3s;
+}
+
+.info-card:hover{
+  transform:translateY(-6px);
+  background:#163c6b;
+}
+
+
+/* DIMENSIONS */
+
+.dimension-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;
+}
+
+.dimension-card{
+  background:#021733;
+  border:1px solid rgba(255,255,255,0.05);
+  padding:22px;
+  border-radius:14px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.dimension-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 20px rgba(110,198,255,0.3);
+}
+
+.big-number{
+  font-size:34px;
+  font-weight:bold;
+  color:#6ec6ff;
+}
+
+
+/* CREASE */
+
+.crease-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.crease-card{
+  background:#0f2a4f;
+  padding:18px;
+  border-radius:12px;
+}
+
+
+/* STRATEGY */
+
+.strategy-list{
+  margin-top:12px;
+}
+
+.strategy-list li{
+  margin-bottom:10px;
+}
+
+
+/* SUMMARY */
+
+.lesson-summary{
+  background:#0b2d52;
+  padding:24px;
+  border-radius:14px;
+}
+
+
+/* ANIMATION */
+
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.7s ease;
+}
+
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+
+
+/* ================= module 3 ================= */
+
+
+
+
+/* IMPACT SECTION */
+
+.impact-section{
+margin-bottom:60px;
+}
+
+.impact-section h2{
+color:#6ec6ff;
+margin-bottom:16px;
+}
+
+/* GRID */
+
+.impact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+}
+
+/* CARDS */
+
+.impact-card{
+background:#0b2d52;
+padding:18px;
+border-radius:14px;
+transition:0.3s;
+}
+
+.impact-card:hover{
+transform:translateY(-6px);
+background:#163c6b;
+}
+
+/* DEMO */
+
+.impact-demo{
+margin-top:50px;
+text-align:center;
+}
+
+.bounce-demo{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:30px;
+}
+
+/* BALL */
+
+.bounce{
+width:20px;
+height:20px;
+border-radius:50%;
+background:#ff4d4d;
+position:relative;
+animation:bounceAnim 1.5s infinite;
+}
+
+/* VARIATIONS */
+
+.bounce.hard{
+animation-duration:0.8s;
+}
+
+.bounce.soft{
+animation-duration:1.8s;
+}
+
+.bounce.spin{
+animation-duration:1.2s;
+}
+
+/* ANIMATION */
+
+@keyframes bounceAnim{
+
+0%{
+top:0;
+}
+
+50%{
+top:-40px;
+}
+
+100%{
+top:0;
+}
+
+}
+
+
+
+
+
+
+/* ================= module 4 ================ */
+
+
+
+/* RULES */
+
+.rule-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+margin-top:18px;
+}
+
+.rule-card{
+background:#0b2d52;
+padding:18px;
+border-radius:14px;
+transition:0.3s;
+}
+
+.rule-card:hover{
+transform:translateY(-6px);
+background:#163c6b;
+}
+
+
+/* STEPS */
+
+.step-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+margin-top:20px;
+}
+
+.step-card{
+background:#021733;
+border:1px solid rgba(255,255,255,0.05);
+padding:20px;
+border-radius:14px;
+}
+
+.step-card h3{
+color:#6ec6ff;
+margin-bottom:6px;
+}
+
+
+
+/* GRIP DEMO */
+
+.grip-container{
+display:flex;
+justify-content:center;
+margin:40px 0;
+}
+
+.bat-handle{
+position:relative;
+width:40px;
+height:220px;
+background:linear-gradient(#e6c384,#cda45e);
+border-radius:10px;
+}
+
+
+/* HANDS */
+
+.hand{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+background:#6ec6ff;
+padding:6px 10px;
+border-radius:10px;
+font-size:12px;
+}
+
+.top-hand{
+top:30px;
+}
+
+.bottom-hand{
+top:100px;
+}
+
+
+/* ================= module 5 ================ */
+
+/* FRONT FOOT DEFENCE IMAGE */
+
+.defence-image-container{
+display:flex;
+justify-content:center;
+margin:40px 0;
+}
+
+.defence-image{
+max-width:600px;
+width:100%;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+transition:transform 0.3s;
+}
+
+.defence-image:hover{
+transform:scale(1.03);
+}

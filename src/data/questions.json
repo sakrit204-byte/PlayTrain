@@ -1,0 +1,406 @@
+{
+  "cricket": [
+    {
+      "question": "How many players are in a cricket team?",
+      "options": ["9", "10", "11", "12"],
+      "answer": 2
+    },
+    {
+      "question": "What does LBW stand for?",
+      "options": ["Leg Before Wicket", "Long Ball Wide", "Low Bat Win", "Last Ball Wicket"],
+      "answer": 0
+    },
+    {
+      "question": "How many overs are in a T20 match?",
+      "options": ["10", "20", "30", "40"],
+      "answer": 1
+    },
+    {
+      "question": "What is a yorker?",
+      "options": [
+        "Ball pitched near batsman's feet",
+        "High bouncer",
+        "Slow ball",
+        "Wide ball"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How many umpires are on field?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 1
+    },
+    {
+      "question": "Which shot sends ball behind wicket?",
+      "options": ["Pull", "Hook", "Sweep", "Cut"],
+      "answer": 3
+    },
+    {
+      "question": "What is a maiden over?",
+      "options": [
+        "No runs scored",
+        "All wides",
+        "All sixes",
+        "All wickets"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which fielding position is behind the wicket?",
+      "options": ["Slip", "Mid-off", "Fine leg", "Cover"],
+      "answer": 0
+    },
+    {
+      "question": "How many balls in an over?",
+      "options": ["5", "6", "7", "8"],
+      "answer": 1
+    },
+    {
+      "question": "What is a googly?",
+      "options": [
+        "Fast delivery",
+        "Spin delivery that turns opposite",
+        "Wide ball",
+        "Full toss"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which format is 50 overs?",
+      "options": ["Test", "ODI", "T20", "IPL"],
+      "answer": 1
+    },
+    {
+      "question": "What is a bouncer?",
+      "options": [
+        "Short ball rising high",
+        "Slow ball",
+        "Wide ball",
+        "Spin ball"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Who protects the wicket?",
+      "options": ["Bowler", "Wicketkeeper", "Slip", "Captain"],
+      "answer": 1
+    },
+    {
+      "question": "What is a duck?",
+      "options": ["0 runs", "1 run", "2 runs", "Out on first ball"],
+      "answer": 0
+    },
+    {
+      "question": "Which shot hits ball behind square?",
+      "options": ["Cut", "Drive", "Sweep", "Pull"],
+      "answer": 0
+    },
+    {
+      "question": "Which position is near bowler?",
+      "options": ["Slip", "Mid-on", "Point", "Third man"],
+      "answer": 1
+    },
+    {
+      "question": "What is a full toss?",
+      "options": [
+        "Ball that doesn't bounce",
+        "Short ball",
+        "Spin ball",
+        "Wide ball"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which shot hits ball straight?",
+      "options": ["Drive", "Cut", "Hook", "Pull"],
+      "answer": 0
+    },
+    {
+      "question": "Which role leads the team?",
+      "options": ["Captain", "Bowler", "Umpire", "Coach"],
+      "answer": 0
+    },
+    {
+      "question": "Which delivery spins sharply?",
+      "options": ["Googly", "Yorker", "Bouncer", "Full toss"],
+      "answer": 0
+    }
+  ],
+
+  "basketball": [
+    {
+      "question": "How many players per team on court?",
+      "options": ["4", "5", "6", "7"],
+      "answer": 1
+    },
+    {
+      "question": "Which player runs offense?",
+      "options": ["Center", "Point Guard", "Power Forward", "Small Forward"],
+      "answer": 1
+    },
+    {
+      "question": "How many points is a free throw?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 0
+    },
+    {
+      "question": "How many points is a 3-point shot?",
+      "options": ["2", "3", "4", "5"],
+      "answer": 1
+    },
+    {
+      "question": "What is dribbling?",
+      "options": [
+        "Passing",
+        "Bouncing ball while moving",
+        "Jumping shot",
+        "Blocking"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is a rebound?",
+      "options": [
+        "Catching missed shot",
+        "Passing ball",
+        "Scoring basket",
+        "Defending shot"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which player guards basket?",
+      "options": ["Center", "Guard", "Forward", "Coach"],
+      "answer": 0
+    },
+    {
+      "question": "What is a dunk?",
+      "options": [
+        "Throw ball in hoop from above",
+        "Long pass",
+        "Defense move",
+        "Foul"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How long is NBA game?",
+      "options": ["48 min", "60 min", "30 min", "90 min"],
+      "answer": 0
+    },
+    {
+      "question": "What is a block?",
+      "options": [
+        "Stopping shot",
+        "Passing ball",
+        "Dribble",
+        "Assist"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is assist?",
+      "options": [
+        "Pass leading to score",
+        "Defense move",
+        "Rebound",
+        "Foul"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a steal?",
+      "options": [
+        "Taking ball from opponent",
+        "Shooting",
+        "Passing",
+        "Blocking"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is traveling?",
+      "options": [
+        "Moving without dribbling",
+        "Passing error",
+        "Defense foul",
+        "Timeout"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a layup?",
+      "options": [
+        "Close range shot",
+        "Long shot",
+        "Free throw",
+        "Block"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which line marks 3-point area?",
+      "options": [
+        "Arc line",
+        "Baseline",
+        "Free throw line",
+        "Sideline"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a foul?",
+      "options": [
+        "Illegal contact",
+        "Shot",
+        "Assist",
+        "Pass"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Who leads plays?",
+      "options": [
+        "Point Guard",
+        "Center",
+        "Referee",
+        "Coach"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is tip-off?",
+      "options": [
+        "Game start jump ball",
+        "Timeout",
+        "Foul",
+        "Assist"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is backboard?",
+      "options": [
+        "Board behind hoop",
+        "Court line",
+        "Scoreboard",
+        "Bench"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is shot clock?",
+      "options": [
+        "Time to shoot",
+        "Game clock",
+        "Timeout",
+        "Score clock"
+      ],
+      "answer": 0
+    }
+  ],
+  
+  "football": [
+    {
+      "question": "How many players are on the field for one team in football?",
+      "options": ["9", "10", "11", "12"],
+      "answer": 2
+    },
+    {
+      "question": "How long is a standard football match?",
+      "options": ["60 minutes", "70 minutes", "80 minutes", "90 minutes"],
+      "answer": 3
+    },
+    {
+      "question": "What is awarded for a foul inside the penalty box?",
+      "options": ["Free kick", "Penalty kick", "Corner", "Throw-in"],
+      "answer": 1
+    },
+    {
+      "question": "Which player position primarily scores goals?",
+      "options": ["Goalkeeper", "Defender", "Forward", "Referee"],
+      "answer": 2
+    },
+    {
+      "question": "What is the area called where the goalkeeper can use hands?",
+      "options": ["Goal area", "Penalty area", "Midfield", "Corner zone"],
+      "answer": 1
+    },
+    {
+      "question": "What happens when the ball crosses the sideline?",
+      "options": ["Goal kick", "Corner kick", "Throw-in", "Penalty"],
+      "answer": 2
+    },
+    {
+      "question": "What card means a player is sent off?",
+      "options": ["Yellow card", "Red card", "Blue card", "Green card"],
+      "answer": 1
+    },
+    {
+      "question": "How many halves are in a football match?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 1
+    },
+    {
+      "question": "What restart occurs after the ball crosses the goal line off the attacking team?",
+      "options": ["Corner kick", "Throw-in", "Goal kick", "Penalty"],
+      "answer": 2
+    },
+    {
+      "question": "What is it called when a player illegally handles the ball?",
+      "options": ["Offside", "Handball", "Foul", "Dribble"],
+      "answer": 1
+    },
+    {
+      "question": "Which tournament is the biggest international football competition?",
+      "options": ["UEFA Champions League", "FIFA World Cup", "Copa America", "Euro Cup"],
+      "answer": 1
+    },
+    {
+      "question": "What is given for a foul outside the penalty box?",
+      "options": ["Free kick", "Penalty", "Throw-in", "Corner"],
+      "answer": 0
+    },
+    {
+      "question": "What is the term for scoring three goals in one match?",
+      "options": ["Double", "Hat-trick", "Triple kick", "Mega goal"],
+      "answer": 1
+    },
+    {
+      "question": "Which player defends the goal?",
+      "options": ["Defender", "Forward", "Goalkeeper", "Midfielder"],
+      "answer": 2
+    },
+    {
+      "question": "What is the center of the field called?",
+      "options": ["Penalty area", "Center circle", "Goal zone", "Kick zone"],
+      "answer": 1
+    },
+    {
+      "question": "What is awarded when the defending team last touches the ball over the goal line?",
+      "options": ["Corner kick", "Goal kick", "Penalty", "Throw-in"],
+      "answer": 0
+    },
+    {
+      "question": "Which position mainly controls the game's pace?",
+      "options": ["Forward", "Midfielder", "Defender", "Goalkeeper"],
+      "answer": 1
+    },
+    {
+      "question": "What is it called when a player is ahead of defenders when receiving the ball?",
+      "options": ["Handball", "Offside", "Corner", "Penalty"],
+      "answer": 1
+    },
+    {
+      "question": "How many referees usually officiate a match on field?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 0
+    },
+    {
+      "question": "What equipment protects a player's lower legs?",
+      "options": ["Gloves", "Shin guards", "Helmet", "Pads"],
+      "answer": 1
+    }
+  ]
+
+}

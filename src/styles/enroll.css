@@ -1,0 +1,92 @@
+/* ================= PAGE BACKGROUND ================= */
+
+.enroll-page{
+  height: calc(100vh - 70px);
+  background: radial-gradient(circle at top,#0b2c55,#020b2a);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/* ================= CARD ================= */
+
+.enroll-card{
+
+  width:360px;
+  padding:40px 30px;
+
+  background:#1a6a8c;
+
+  border-radius:22px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+
+/* ================= COURSE IMAGE ================= */
+
+.enroll-card img{
+
+  width:120px;
+  height:120px;
+
+  object-fit:cover;
+
+  border-radius:16px;
+
+  margin-bottom:25px;
+
+}
+
+
+/* ================= TEXT ================= */
+
+.enroll-card p{
+
+  color:white;
+  margin:6px 0;
+  font-size:15px;
+
+}
+
+
+/* ================= ENROLL BUTTON ================= */
+
+.enroll-card button{
+
+  margin-top:30px;
+
+  padding:12px 48px;
+
+  border:none;
+  border-radius:30px;
+
+  font-size:15px;
+  font-weight:600;
+
+  color:white;
+
+  background:linear-gradient(90deg,#7c4dff,#9f6bff);
+
+  cursor:pointer;
+
+  transition:0.2s;
+}
+
+
+/* ================= HOVER ================= */
+
+.enroll-card button:hover{
+
+  transform:translateY(-2px);
+  box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}

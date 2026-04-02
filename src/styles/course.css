@@ -1,0 +1,214 @@
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #032148;
+  color: white;
+}
+
+/* ================= COURSE PAGE ================= */
+
+.course-container {
+  margin-top: 10vh;
+  padding: 0 24px 40px;
+}
+
+/* ================= HEADER ================= */
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px; /* space after page header */
+}
+
+.course-header h1 {
+  font-size: 36px;
+  color: #6ec6ff;
+}
+
+/* ================= SECTION TITLES ================= */
+
+.section-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 28px;   /* space between title & grid */
+  margin-top: 48px;      /* space between sections */
+}
+
+/* first section should not push down */
+.section-title:first-of-type {
+  margin-top: 0;
+}
+
+/* ================= TOGGLE ================= */
+
+.toggle {
+  display: flex;
+  background: #0f2a4f;
+  border-radius: 30px;
+  padding: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  position: relative;
+  flex: 1;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  margin-left: -18px;
+  z-index: 1;
+  isolation: isolate;
+  white-space: nowrap;
+}
+
+.toggle-btn:first-child {
+  margin-left: 0;
+}
+
+.toggle-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #8ad9ff;
+  border-radius: 25px;
+  z-index: -2;
+}
+
+.toggle-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1c3c6b;
+  border-radius: 25px;
+  z-index: -1;
+  transform: scale(1);
+  transition: transform 0.35s ease;
+}
+
+.toggle-btn:not(.active):hover::before {
+  transform: scale(0);
+}
+
+.toggle-btn:not(.active):hover {
+  z-index: 5;
+  box-shadow: 0 0 12px rgba(138, 217, 255, 0.5);
+}
+
+.toggle-btn.active {
+  color: #000;
+  cursor: default;
+  z-index: 10;
+}
+
+.toggle-btn.active::before {
+  background: #6ec6ff;
+  transform: scale(1);
+}
+
+/* ================= GRID ================= */
+
+/* Our Courses */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  gap: 32px;                 /* healthy card spacing */
+  justify-content: start;
+  margin-bottom: 56px;       /* space after grid */
+}
+
+/* Enrolled Courses */
+.course-grid.enrolled {
+  grid-template-columns: repeat(auto-fill, 300px);
+}
+
+/* ================= CARD ================= */
+
+.course-card {
+  background: #5b54d6;
+  border-radius: 22px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ================= IMAGE ================= */
+
+.course-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #6ec6ff, #1c3c6b);
+  border-radius: 16px;
+  margin-bottom: 14px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Enrolled images slightly taller */
+.course-grid.enrolled .course-img {
+  aspect-ratio: 4 / 3;
+}
+
+/* Cricket image only */
+.cricket-img {
+  background-image: url("../assets/cricket.png");
+}
+.football-img {
+  background-image: url("../assets/football.png");
+}
+.tennis-img {
+  background-image: url("../assets/tennis/tennis.png");
+}
+.basketball-img{
+    background-image: url("../assets/basketball.png");
+
+}
+/* ================= TEXT ================= */
+
+.course-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+/* ================= BUTTON ================= */
+
+.course-card a {
+  margin-top: auto;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 18px;
+  background: #6ec6ff;
+  color: #000;
+  border-radius: 22px;
+  font-weight: bold;
+}

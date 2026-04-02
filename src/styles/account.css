@@ -1,0 +1,309 @@
+/* ================= ACCOUNT PAGE ================= */
+
+.account-page{
+  display:flex;
+  min-height:calc(100vh - 70px);
+  background: radial-gradient(circle,#052a5a,#041c3c);
+  color:white;
+  margin-top:-60vh;
+  overflow:visible;
+}
+
+/* ================= SIDEBAR ================= */
+
+.account-sidebar{
+  width:240px;
+  height:100vh;
+  position:fixed;
+  left:0;
+  top:0;
+  background:#021733;
+  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.account-sidebar h3{
+  margin-bottom:20px;
+  color:#6ec6ff;
+}
+
+.account-sidebar button{
+  padding:10px 12px;
+  border:none;
+  background:none;
+  color:white;
+  text-align:left;
+  cursor:pointer;
+  border-radius:8px;
+  font-size:15px;
+  transition:all 0.2s ease;
+}
+
+.account-sidebar button:hover{
+  background:rgba(110,198,255,0.15);
+}
+
+.account-sidebar button.active{
+  background:#6ec6ff;
+  color:#021733;
+  font-weight:600;
+}
+
+/* ================= CONTENT ================= */
+
+.account-content{
+  flex:1;
+  margin-left:240px;
+  padding:40px 50px;
+}
+
+/* ================= DASHBOARD CARDS ================= */
+
+.dashboard-cards{
+  display:flex;
+  gap:30px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.dash-card{
+  background:#021733;
+  padding:25px 35px;
+  border-radius:14px;
+  min-width:180px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.dash-card h3{
+  font-size:34px;
+  margin-bottom:5px;
+  color:#6ec6ff;
+}
+
+.dash-card p{
+  font-size:14px;
+  opacity:0.8;
+}
+
+/* ================= COURSE LIST ================= */
+
+.course-row{
+  background:#021733;
+  padding:15px 20px;
+  border-radius:10px;
+  margin-bottom:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* ================= CERTIFICATE LIST ================= */
+
+.cert-row{
+  background:#021733;
+  padding:15px 20px;
+  border-radius:10px;
+  margin-bottom:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* ================= PRIVACY FORM ================= */
+
+.account-content label{
+  display:block;
+  margin-top:20px;
+  margin-bottom:6px;
+  font-size:14px;
+}
+
+.account-content input{
+  width:300px;
+  padding:10px 12px;
+  border-radius:8px;
+  border:none;
+  outline:none;
+  background:#62d7f0;
+  color:black;
+}
+
+.account-content button{
+  margin-top:25px;
+  padding:10px 22px;
+  border:none;
+  border-radius:20px;
+  background:#6ec6ff;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.account-content button:hover{
+  opacity:0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:900px){
+
+  .account-page{
+    flex-direction:column;
+  }
+
+  .account-sidebar{
+    width:100%;
+    height:auto;
+    position:relative;
+    flex-direction:row;
+    justify-content:space-around;
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+
+  .account-sidebar h3{
+    display:none;
+  }
+
+  .account-sidebar button{
+    font-size:14px;
+  }
+
+  .account-content{
+    margin-left:0;
+    padding:30px 25px;
+  }
+
+  .dashboard-cards{
+    flex-direction:column;
+  }
+
+  .account-content input{
+    width:100%;
+  }
+
+}
+
+/* ================= CERTIFICATIONS ================= */
+
+.cert-grid{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.cert-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#0a2a55;
+  border-radius:12px;
+  padding:20px 24px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  transition:0.2s;
+}
+
+.cert-card:hover{
+  transform:translateY(-2px);
+}
+
+.cert-left h3{
+  margin:0;
+  font-size:18px;
+}
+
+.cert-left p{
+  margin:5px 0;
+  color:#a9c7ff;
+}
+
+.cert-id{
+  font-size:13px;
+  opacity:0.8;
+}
+
+.view-cert-btn{
+  padding:10px 22px;
+  border-radius:25px;
+  background:#6ec6ff;
+  color:#000;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.2s;
+}
+
+.view-cert-btn:hover{
+  background:#9edbff;
+}
+
+.privacy-fix{
+  margin-top:60vh;
+}
+
+.deregister-btn{
+  background:#ff6b6b;
+  border:none;
+  padding:8px 16px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.deregister-btn:hover{
+  opacity:0.9;
+}
+/* OVERLAY */
+.modal-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(5px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+/* BOX */
+.modal-box{
+  background:#021733;
+  padding:30px;
+  border-radius:12px;
+  width:320px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* BUTTONS */
+.modal-actions{
+  margin-top:20px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.cancel-btn{
+  background:#aaa;
+  border:none;
+  padding:8px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.confirm-btn{
+  background:#ff4d4d;
+  border:none;
+  padding:8px 18px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}

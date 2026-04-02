@@ -1,0 +1,130 @@
+/* ================= OVERLAY ================= */
+
+.auth-overlay{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.5);
+
+backdrop-filter:blur(8px);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:9999;
+
+}
+
+
+/* ================= MODAL ================= */
+
+.auth-modal{
+
+width:420px;
+
+background:linear-gradient(180deg,#0b2c55,#031b36);
+
+border-radius:18px;
+
+padding:40px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+animation:pop 0.3s ease;
+
+}
+
+
+/* ================= TITLE ================= */
+
+.auth-modal h2{
+
+font-size:26px;
+margin-bottom:15px;
+
+}
+
+
+/* ================= TEXT ================= */
+
+.auth-modal p{
+
+opacity:0.8;
+margin-bottom:30px;
+line-height:1.5;
+
+}
+
+
+/* ================= BUTTONS ================= */
+
+.auth-buttons{
+
+display:flex;
+gap:20px;
+justify-content:center;
+
+}
+
+
+.login-btn{
+
+padding:10px 28px;
+
+border:none;
+border-radius:25px;
+
+background:#3aa0ff;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+
+.signup-btn{
+
+padding:10px 28px;
+
+border:none;
+border-radius:25px;
+
+background:linear-gradient(90deg,#7c4dff,#9f6bff);
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes pop{
+
+from{
+transform:scale(0.9);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
