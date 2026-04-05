@@ -20,6 +20,20 @@ export default function Navbar() {
     navigate("/");   // 👈 redirect to home
   };
 
+  // menu toggle
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".nav-menu");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("open");
+});
+
+// profile dropdown (mobile)
+const profile = document.querySelector(".profile-wrapper");
+
+profile.addEventListener("click", () => {
+  profile.classList.toggle("active");
+});
   return (
     <nav className="navbar">
 

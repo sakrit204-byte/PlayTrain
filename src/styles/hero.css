@@ -526,3 +526,105 @@ a{
   }
 }
 
+/* ================= MOBILE FIXES ================= */
+
+@media (max-width: 900px){
+
+  /* HERO SECTION */
+
+  .hero-section{
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .hero-side{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 10px 0;
+  }
+
+  .hero-center{
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .active-sport{
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .spotlight{
+    width: 250px;
+    height: 400px;
+  }
+
+  /* SELLING SECTION */
+
+  .selling{
+    padding: 80px 20px;
+  }
+
+  .selling-title{
+    font-size: 28px;
+  }
+
+  .selling-subtitle{
+    font-size: 14px;
+  }
+
+  .selling-features{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .selling-image{
+    display:none; /* hide on mobile */
+  }
+
+  /* FINAL CTA */
+
+  .final-title{
+    font-size: 28px;
+  }
+
+  .stats{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stat-number{
+    font-size: 36px;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 500px){
+
+  .active-sport{
+    font-size: 26px;
+  }
+
+  .side-title{
+    font-size: 16px;
+  }
+
+  .sport-icon{
+    font-size: 24px;
+  }
+
+  .selling-title{
+    font-size: 24px;
+  }
+
+  .final-title{
+    font-size: 24px;
+  }
+
+}

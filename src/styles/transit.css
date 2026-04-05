@@ -139,3 +139,78 @@
   }
 
 }
+/* ================= HEIGHT FIX (IMPORTANT) ================= */
+
+/* better mobile viewport handling */
+.assessment-start-page{
+  min-height: calc(100dvh - 70px);
+  padding: 20px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px){
+
+  .assessment-card{
+    width: 320px;
+    max-width: 90%;
+  }
+
+  .assessment-card img{
+    height: 180px;
+  }
+
+  .assessment-title{
+    font-size: 20px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:600px){
+
+  .assessment-card{
+    width: 95%;
+  }
+
+  .assessment-card img{
+    height: 190px;
+  }
+
+  .assessment-card-body{
+    padding:16px 14px;
+  }
+
+  .assessment-title{
+    font-size:18px;
+  }
+
+  .assessment-type,
+  .assessment-lessons{
+    font-size:13px;
+  }
+
+  .assessment-btn{
+    width:100%;
+    padding:12px;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:400px){
+
+  .assessment-title{
+    font-size:16px;
+  }
+
+  .assessment-card img{
+    height:160px;
+  }
+
+}

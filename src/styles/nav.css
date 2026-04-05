@@ -1,7 +1,6 @@
 /* ================= NAVBAR ================= */
 
 .navbar{
- 
   width:100%;
   height:70px;
   background:#001f47;
@@ -14,14 +13,12 @@
   top:0;
   left:0;
   z-index:1000;
-
-  overflow:visible; /* or hidden if needed */
 }
 
 /* LOGO */
 
 .logo{
-  font-size:22px;
+  font-size:20px;
   font-weight:bold;
   color:#6ec6ff;
   white-space:nowrap;
@@ -29,15 +26,10 @@
 
 /* TOGGLE */
 
-#nav-toggle{
-  display:none;
-}
-
 .menu-toggle{
   display:none;
   font-size:26px;
   cursor:pointer;
-  user-select:none;
 }
 
 /* DESKTOP MENU */
@@ -52,8 +44,6 @@
   list-style:none;
   display:flex;
   gap:22px;
-  padding:0;
-  margin:0;
 }
 
 .nav-links li a{
@@ -61,7 +51,6 @@
   color:white;
   font-weight:500;
   position:relative;
-  display:inline-block;
 }
 
 /* underline hover */
@@ -96,7 +85,7 @@
   color:white;
   border:1px solid #6ec6ff;
   font-weight:500;
-  transition:all 0.25s ease;
+  transition:0.25s;
 }
 
 .nav-btn:hover{
@@ -107,10 +96,6 @@
 .signup{
   background:#6ec6ff;
   color:#000;
-}
-
-.signup:hover{
-  opacity:0.9;
 }
 
 /* ================= TABLET ================= */
@@ -139,22 +124,29 @@
     display:block;
   }
 
+  /* MOBILE MENU */
+
   .nav-menu{
-    display:none;
     position:absolute;
     top:70px;
     left:0;
     width:100%;
     background:#021733;
+
     flex-direction:column;
     align-items:center;
-    padding:25px 0;
     gap:25px;
-    animation:dropdown 0.25s ease;
+
+    padding:25px 0;
+
+    max-height:0;
+    overflow:hidden;
+
+    transition:max-height 0.3s ease;
   }
 
   .nav-menu.open{
-    display:flex;
+    max-height:500px;
   }
 
   .nav-links{
@@ -166,27 +158,31 @@
   .nav-right{
     flex-direction:column;
     gap:15px;
+    width:100%;
+    align-items:center;
   }
 
   .nav-btn{
-    width:160px;
+    width:80%;
     text-align:center;
   }
 
 }
 
-/* dropdown animation */
+/* ================= SMALL MOBILE ================= */
 
-@keyframes dropdown{
+@media (max-width:600px){
 
-  from{
-    opacity:0;
-    transform:translateY(-10px);
+  .logo{
+    font-size:18px;
   }
 
-  to{
-    opacity:1;
-    transform:translateY(0);
+  .menu-toggle{
+    font-size:24px;
+  }
+
+  .nav-btn{
+    width:90%;
   }
 
 }
@@ -207,17 +203,12 @@ body{
 
 /* ICON */
 
-.profile-icon{
-  font-size:26px;
-  color:white;
-  cursor:pointer;
-}
-
 .profile-icon img{
   width:34px;
   height:34px;
   border-radius:50%;
   object-fit:cover;
+  cursor:pointer;
 }
 
 /* DROPDOWN */
@@ -225,42 +216,29 @@ body{
 .profile-dropdown{
   position:absolute;
   right:0;
-  top:100%;
-  margin-top:8px;
-
+  top:110%;
   background:#012b62;
   border-radius:10px;
   padding:10px 0;
   min-width:160px;
-
   box-shadow:0 10px 25px rgba(0,0,0,0.4);
 
   display:none;
   flex-direction:column;
-
-  opacity:0;
-  transform:translateY(-8px);
-  transition:all 0.2s ease;
 }
 
-/* SHOW DROPDOWN */
+/* DESKTOP HOVER */
 
-.profile-wrapper:hover .profile-dropdown,
-.profile-dropdown:hover{
+@media (min-width:901px){
+  .profile-wrapper:hover .profile-dropdown{
+    display:flex;
+  }
+}
+
+/* MOBILE CLICK SUPPORT */
+
+.profile-wrapper.active .profile-dropdown{
   display:flex;
-  opacity:1;
-  transform:translateY(0);
-}
-
-/* hover bridge */
-
-.profile-wrapper::after{
-  content:"";
-  position:absolute;
-  top:100%;
-  right:0;
-  width:100%;
-  height:12px;
 }
 
 /* dropdown items */
@@ -268,60 +246,15 @@ body{
 .profile-dropdown a,
 .profile-dropdown button{
   padding:10px 18px;
-  text-decoration:none;
   color:white;
   background:none;
   border:none;
   text-align:left;
   cursor:pointer;
-  font-size:14px;
 }
 
 .profile-dropdown a:hover,
 .profile-dropdown button:hover{
   background:#6ec6ff;
   color:#000;
-}
-
-/* PROFILE HEADER */
-
-.profile-header{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:10px 18px;
-}
-
-.profile-header img{
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  object-fit:cover;
-}
-
-.profile-header span{
-  font-weight:500;
-}
-
-/* ================= GLOBAL FIXES ================= */
-
-/* remove browser click outlines */
-
-a,
-button,
-label{
-  outline:none;
-  -webkit-tap-highlight-color:transparent;
-}
-
-/* prevent click shifting */
-
-button{
-  border:none;
-  background:none;
-}
-
-button:active,
-a:active{
-  transform:none;
 }
