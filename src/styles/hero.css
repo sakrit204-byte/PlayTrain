@@ -19,7 +19,7 @@ a{
   min-height: 70vh;
   width: 100%;
 
-  margin-top: 120vh;   /* pulls section back up to counter <br> stack */
+  margin-top: 0;
 
   display: flex;
   justify-content: space-between;
@@ -262,6 +262,46 @@ a{
   text-shadow: 0 0 14px rgba(110, 198, 255, 0.9);
   color: #bfe6ff;
 }
+/* ================= TICKER ================= */
+
+.ticker {
+  white-space: nowrap;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  width: 200%;
+  overflow: hidden;
+}
+
+/* ================= HERO CTA ================= */
+
+.hero-cta-text {
+  font-size: 15px;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 38px;
+  border-radius: 30px;
+  border: 1px solid #6ec6ff;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.35s ease;
+  margin-top: 8px;
+}
+
+.hero-btn:hover {
+  background: #6ec6ff;
+  color: #000;
+  box-shadow: 0 0 30px rgba(110, 198, 255, 0.5);
+  transform: translateY(-2px);
+}
+
 /* Default text */
 .active-sport::after {
   content: attr(data-default);
