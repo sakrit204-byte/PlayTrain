@@ -30,32 +30,6 @@ const outdoorSports = [
 
 useEffect(() => {
 
-const updateLayout = () => {
-  const navbar = document.querySelector("nav");
-
-  if (navbar && heroRef.current) {
-    const navHeight = navbar.offsetHeight;
-    heroRef.current.style.paddingTop = navHeight + "px";
-    heroRef.current.style.minHeight = `calc(100vh + ${navHeight}px)`;
-  }
-};
-
-let timeout;
-
-const handleResize = () => {
-  clearTimeout(timeout);
-  timeout = setTimeout(updateLayout, 100);
-};
-
-updateLayout();
-window.addEventListener("resize", handleResize);
-
-return () => window.removeEventListener("resize", handleResize);
-
-}, []);
-
-useEffect(() => {
-
 const saved = localStorage.getItem("lastSportHover");
 if (saved) setActiveSport(saved);
 
